@@ -1,6 +1,7 @@
+%define pymajor %(rpm -q --qf '%%{VERSION}' python |cut -d. -f1-2)
 Summary:	Build system for PyQt and projects that extend it
 Name:		python-qt-builder
-Version:	1.5.0
+Version:	1.7.0
 Release:	1
 Group:		Development/Python
 License:	GPLv2+
@@ -35,7 +36,7 @@ example sip-install or pip can then be used to build and install the project.
 %build
 %setup_compile_flags
 
-export LDFLAGS="%{ldflags} -lpython3.8"
+export LDFLAGS="%{ldflags} -lpython%{pymajor}"
 
 python setup.py \
 	build
