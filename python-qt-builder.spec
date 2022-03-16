@@ -1,3 +1,4 @@
+%define _empty_manifest_terminate_build 0
 #define pymajor %(rpm -q --qf '%%{VERSION}' python |cut -d. -f1-2)
 Summary:	Build system for PyQt and projects that extend it
 Name:		python-qt-builder
