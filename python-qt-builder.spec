@@ -25,9 +25,9 @@ and an optional project.py script. Any PEP 517 compliant frontend, for
 example sip-install or pip can then be used to build and install the project.
 
 %files -f %{name}.list
-%{py_puresitedir}/pyqtbuild/__pycache__
-%{py_puresitedir}/pyqtbuild/bundle/__pycache__
-%{py_puresitedir}/pyqtbuild/bundle/packages/__pycache__
+#{py_puresitedir}/pyqtbuild/__pycache__
+#{py_puresitedir}/pyqtbuild/bundle/__pycache__
+#{py_puresitedir}/pyqtbuild/bundle/packages/__pycache__
 
 #------------------------------------------------------------
 %prep
