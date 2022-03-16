@@ -11,7 +11,6 @@ BuildRequires:	pkgconfig(python)
 BuildRequires:	python-sip >= 5.0.0
 BuildRequires:	python-sip-qt5
 BuildRequires:	python3dist(toml)
-BuildArch:	noarch
 
 %description
 PyQt-builder is the PEP 517 compliant build system for PyQt and projects that
@@ -25,9 +24,10 @@ and an optional project.py script. Any PEP 517 compliant frontend, for
 example sip-install or pip can then be used to build and install the project.
 
 %files
-#{py_puresitedir}/pyqtbuild/__pycache__
-#{py_puresitedir}/pyqtbuild/bundle/__pycache__
-#{py_puresitedir}/pyqtbuild/bundle/packages/__pycache__
+%{_bindir}/pyqt-bundle
+%{_bindir}/pyqt-qt-wheel
+%{python_sitelib}/PyQt_builder-%{version}-py*.*.egg-info
+%{python_sitelib}/pyqtbuild/
 
 #------------------------------------------------------------
 %prep
