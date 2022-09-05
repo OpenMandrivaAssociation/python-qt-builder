@@ -2,8 +2,8 @@
 #define pymajor %(rpm -q --qf '%%{VERSION}' python |cut -d. -f1-2)
 Summary:	Build system for PyQt and projects that extend it
 Name:		python-qt-builder
-Version:	1.12.2
-Release:	3
+Version:	1.13.0
+Release:	1
 Group:		Development/Python
 License:	GPLv2+
 Url:		http://www.riverbankcomputing.co.uk/software/sip/intro
