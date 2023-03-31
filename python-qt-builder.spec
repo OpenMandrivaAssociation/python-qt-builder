@@ -3,7 +3,7 @@
 Summary:	Build system for PyQt and projects that extend it
 Name:		python-qt-builder
 Version:	1.13.0
-Release:	1
+Release:	2
 Group:		Development/Python
 License:	GPLv2+
 Url:		http://www.riverbankcomputing.co.uk/software/sip/intro
