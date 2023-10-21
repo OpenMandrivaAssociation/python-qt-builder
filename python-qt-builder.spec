@@ -2,8 +2,8 @@
 #define pymajor %(rpm -q --qf '%%{VERSION}' python |cut -d. -f1-2)
 Summary:	Build system for PyQt and projects that extend it
 Name:		python-qt-builder
-Version:	1.13.0
-Release:	2
+Version:	1.15.3
+Release:	1
 Group:		Development/Python
 License:	GPLv2+
 Url:		http://www.riverbankcomputing.co.uk/software/sip/intro
@@ -27,7 +27,7 @@ example sip-install or pip can then be used to build and install the project.
 %files
 %{_bindir}/pyqt-bundle
 %{_bindir}/pyqt-qt-wheel
-%{python_sitelib}/PyQt_builder-%{version}-py*.*.egg-info
+%{python_sitelib}/PyQt_builder-%{version}-py*.*-info
 %{python_sitelib}/pyqtbuild/
 
 #------------------------------------------------------------
