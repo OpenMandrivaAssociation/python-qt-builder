@@ -13,6 +13,7 @@ BuildRequires:	pkgconfig(python)
 BuildRequires:	python-sip >= 5.0.0
 BuildRequires:	python-sip-qt5
 BuildRequires:	python%{py_ver}dist(toml)
+BuildRequires:	python%{py_ver}dist(setuptools-scm)
 BuildSystem:	python
 
 %description
