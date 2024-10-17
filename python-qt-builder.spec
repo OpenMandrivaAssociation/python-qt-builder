@@ -7,7 +7,7 @@ Version:	1.16.4
 Release:	1
 Group:		Development/Python
 License:	GPLv2+
-Url:		http://www.riverbankcomputing.co.uk/software/sip/intro
+Url:		https://www.riverbankcomputing.co.uk/software/sip/intro
 Source0:	https://files.pythonhosted.org/packages/source/P/PyQt-builder/pyqt_builder-%{version}.tar.gz
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python-sip >= 5.0.0
