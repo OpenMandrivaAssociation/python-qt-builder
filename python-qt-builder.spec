@@ -3,7 +3,7 @@
 
 Summary:	Build system for PyQt and projects that extend it
 Name:		python-qt-builder
-Version:	1.17.0
+Version:	1.18.0
 Release:	1
 Group:		Development/Python
 License:	GPLv2+
