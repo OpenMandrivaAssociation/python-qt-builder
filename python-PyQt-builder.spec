@@ -1,19 +1,20 @@
 Name:		python-PyQt-builder
-Version:	1.15.4
+Version:	1.18.0
 Release:	1
-Source0:	https://files.pythonhosted.org/packages/source/P/PyQt-builder/PyQt-builder-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/source/P/PyQt-builder/pyqt_builder-%{version}.tar.gz
 Summary:	The PEP 517 compliant PyQt build system
 URL:		https://pypi.org/project/PyQt-builder/
-License:	SIP
+License:	BSD-2-Clause
 Group:		Development/Python
 BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
 BuildArch:	noarch
 
 %description
 The PEP 517 compliant PyQt build system
 
 %prep
-%autosetup -p1 -n PyQt-builder-%{version}
+%autosetup -p1 -n pyqt_builder-%{version}
 
 %build
 %py_build
