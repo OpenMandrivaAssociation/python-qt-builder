@@ -2,8 +2,8 @@
 
 Summary:	Build system for PyQt and projects that extend it
 Name:		python-PyQt-builder
-Version:	1.19.0
-Release:	1
+Version:	1.19.1
+Release:	2
 Group:		Development/Python
 License:	BSD-2-Clause
 Url:		https://www.riverbankcomputing.co.uk/software/sip/intro
@@ -11,10 +11,10 @@ Source0:	https://files.pythonhosted.org/packages/source/P/PyQt-builder/pyqt_buil
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python-sip >= 5.0.0
 BuildRequires:	python-sip-qt5
-BuildRequires:	python%{py_ver}dist(build)
-BuildRequires:	python%{py_ver}dist(toml)
-BuildRequires:	python%{py_ver}dist(setuptools)
-BuildRequires:	python%{py_ver}dist(setuptools-scm)
+BuildRequires:	python%{pyver}dist(build)
+BuildRequires:	python%{pyver}dist(toml)
+BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
 BuildSystem:	python
 # Renamed 2025/12/01 after 6.0
 %rename python-qt-builder
